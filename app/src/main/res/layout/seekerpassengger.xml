@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20sdp"
+    android:gravity="center"
+
+    >
+
+    <TextView
+        android:id="@+id/howmuch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select how much passenger"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oldertext"
+        android:layout_below="@id/howmuch"
+        android:text="older than 2 years old should buy a seat"
+        android:textSize="@dimen/_10sdp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/count"
+        android:layout_below="@id/oldertext"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="@dimen/_35sdp"
+        android:textColor="@color/purple_500"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passe"
+        android:layout_below="@id/count"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="Passenger"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <SeekBar
+        android:id="@+id/seekbarr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passe"
+        android:paddingTop="@dimen/_15sdp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/oneindicator"
+        android:layout_below="@id/passe"
+        android:layout_toLeftOf="@id/seekbarr"
+        android:text="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbarr"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="cancel"
+            android:background="#EAEAEA"
+            android:textColor="@color/purple_500"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/select"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Select"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
