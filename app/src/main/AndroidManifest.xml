@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject4">
         <activity
+            android:name=".Ratings"
+            android:exported="false" />
+        <activity
+            android:name=".DestinationList"
+            android:exported="false" />
+        <activity
             android:name=".ScheduleList"
             android:exported="false" />
         <activity
