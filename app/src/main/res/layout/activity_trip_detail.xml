@@ -18,66 +18,70 @@
             android:src="@drawable/ic_logo_black"
             />
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/lists"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lists"
         android:layout_below="@id/icons"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_john_illustjohnillus"
             android:layout_gravity="center"
-            />
+            android:src="@drawable/ic_john_illustjohnillus" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/box"
-            app:cardCornerRadius="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iconPeople"
+            android:layout_below="@id/icons"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_minus60sdp"
-            android:layout_marginRight="@dimen/_20sdp">
+            android:layout_marginRight="@dimen/_20sdp"
+            app:cardCornerRadius="10dp">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/_15sdp"
-                >
+                android:padding="@dimen/_15sdp">
+
                 <TextView
                     android:id="@+id/textdepart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/_35sdp"
-                    android:text="departure"/>
+                    android:text="departure" />
+
                 <LinearLayout
+                    android:id="@+id/depart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/depart"
                     android:layout_below="@id/textdepart"
                     android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="@dimen/_10sdp"
-                        android:src="@drawable/ic_icondeparture"
-                        />
+                        android:src="@drawable/ic_icondeparture" />
+
                     <EditText
                         android:id="@+id/inputdeparture"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Try 'Semarang'"/>
+                        android:hint="Try 'Semarang'" />
 
                 </LinearLayout>
+
                 <TextView
                     android:id="@+id/textarrival"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/_35sdp"
-                    android:text="Arrival"
                     android:layout_below="@id/depart"
-                    />
+                    android:paddingLeft="@dimen/_35sdp"
+                    android:text="Arrival" />
 
                 <LinearLayout
                     android:id="@+id/arrival"
@@ -91,83 +95,96 @@
                         android:layout_height="wrap_content"
                         android:padding="@dimen/_10sdp"
                         android:src="@drawable/ic_iconarrival" />
+
                     <EditText
+                        android:id="@+id/inputarrival"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/inputarrival"
-                        android:hint="Try 'Jepara'"/>
+                        android:hint="Try 'Jepara'" />
 
                 </LinearLayout>
+
                 <LinearLayout
+                    android:id="@+id/passenger"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:id="@+id/passenger"
-                    android:layout_below="@id/arrival">
-                <LinearLayout
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="@dimen/_35sdp"
-                        android:text="Passengger"/>
+                    android:layout_below="@id/arrival"
+                    android:orientation="horizontal">
+
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="@dimen/_100sdp"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="@dimen/_10sdp"
-                            android:src="@drawable/ic_iconppl"/>
-                        <EditText
+                            android:paddingLeft="@dimen/_35sdp"
+                            android:text="Passengger" />
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="2 ppl"/>
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ic_iconppl" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="2 ppl" />
+                        </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Date"
-                        android:paddingLeft="@dimen/_30sdp"/>
+
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="@dimen/_100sdp"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_icondate"
-                            android:padding="@dimen/_10sdp"/>
-                        <EditText
+                            android:paddingLeft="@dimen/_30sdp"
+                            android:text="Date" />
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="6 Des"/>
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ic_icondate" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="6 Des" />
+                        </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
                 </LinearLayout>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/lists">
+
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:background="@android:color/holo_purple"
             android:text="Search Bus"
             android:textColor="@color/white"
-            android:background="@android:color/holo_purple"
-
             />
     </LinearLayout>
 

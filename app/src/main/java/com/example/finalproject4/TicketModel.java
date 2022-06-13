@@ -1,4 +1,4 @@
-package com.ammar.buxapp;
+package com.example.finalproject4;
 
 public class TicketModel {
     private String name;
