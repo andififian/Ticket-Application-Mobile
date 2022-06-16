@@ -66,12 +66,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="40dp"
-            android:text="OOPS"
+            android:padding="@dimen/_15sdp"
+            android:text="You don't have ticket yet"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
+            android:text="please order first."
+            android:textAlignment="center"
+            android:textSize="20sp"
             />
     </LinearLayout>
 

@@ -4,10 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_15sdp">
 
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:paddingRight="100dp"
+            android:text="Choose Seats"
+            android:textSize="@dimen/_15sdp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito_sans_extrabold"/>
+    </LinearLayout>
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/scrolled"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
@@ -44,16 +66,16 @@
                         android:layout_width="36dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="4dp"
-                        android:text="A"
+                        android:text="I"
                         android:textAlignment="center"
                         android:textSize="@dimen/_18sdp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="36dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginStart="4dp"
-                        android:text="B"
+                        android:text="II"
                         android:textAlignment="center"
                         android:textSize="@dimen/_18sdp"
                         android:textStyle="bold" />
@@ -70,7 +92,7 @@
                         android:layout_width="36dp"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="4dp"
-                        android:text="C"
+                        android:text="III"
                         android:textAlignment="center"
                         android:textSize="@dimen/_18sdp"
                         android:textStyle="bold" />
@@ -79,7 +101,7 @@
                         android:layout_width="36dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
-                        android:text="D"
+                        android:text="IV"
                         android:textAlignment="center"
                         android:textSize="@dimen/_18sdp"
                         android:textStyle="bold" />
@@ -753,5 +775,69 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/wrapalarmbutton"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_below="@id/scrolled">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/textalarm"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ellipse"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected Seat" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_ellipse__1_" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reserved" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:src="@drawable/ic_ellipse__2_" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Booked" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
 
 </RelativeLayout>
