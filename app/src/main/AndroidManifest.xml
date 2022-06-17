@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject4">
         <activity
+            android:name=".BusDetail"
+            android:exported="false" />
+        <activity
             android:name=".DatePicker"
             android:exported="false" />
         <activity

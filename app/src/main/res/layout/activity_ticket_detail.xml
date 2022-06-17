@@ -210,14 +210,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="19dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="30dp"
                 android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
                 android:layout_marginBottom="15dp"
                 android:fontFamily="@font/nunito_sans_extrabold"
-                android:text="@string/number_phone"
-                android:textAppearance="@style/some_id_2"
                 android:gravity="top"
-                />
+                android:text="@string/number_phone"
+                android:textAppearance="@style/some_id_2" />
 
             <TextView
                 android:id="@+id/seats"
@@ -587,6 +586,7 @@
     </RelativeLayout>
 
     //TOTAL BOX
+
     <RelativeLayout
         android:layout_width="344dp"
         android:layout_height="wrap_content"
@@ -601,12 +601,11 @@
             android:layout_height="22dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="29dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/nunito_sans_extrabold"
             android:text="Total"
-            android:textAppearance="@style/big_character_total"
-            />
+            android:textAppearance="@style/big_character_total" />
 
         <TextView
             android:id="@+id/total"
@@ -617,10 +616,9 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="28dp"
             android:fontFamily="@font/nunito_sans_extrabold"
-            android:text="Rp332.333,00"
-            android:textAppearance="@style/big_character_total"
             android:gravity="top"
-            />
+            android:text="Rp332.333,00"
+            android:textAppearance="@style/big_character_total" />
 
 
     </RelativeLayout>
