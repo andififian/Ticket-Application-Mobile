@@ -72,7 +72,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="@dimen/_75sdp"
         android:layout_height="@dimen/_35sdp"
-        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_190sdp"
         android:layout_toRightOf="@+id/busCard"
         android:backgroundTint="@color/purple_200"

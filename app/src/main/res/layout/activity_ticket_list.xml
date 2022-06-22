@@ -93,6 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/_30sdp"
+            android:onClick="scheduleList"
             android:src="@drawable/ic_search" />
 
         <ImageView
@@ -100,6 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/_60sdp"
+            android:onClick="ticketList"
             android:src="@drawable/ic_rectangle_4_note" />
 
         <ImageView

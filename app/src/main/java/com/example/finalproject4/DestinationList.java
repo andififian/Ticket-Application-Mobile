@@ -9,6 +9,6 @@ public class DestinationList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_destination_list);
+        setContentView(R.layout.coba);
     }
 }

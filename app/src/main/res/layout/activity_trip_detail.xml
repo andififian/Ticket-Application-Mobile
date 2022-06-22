@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TripDetail"
+    tools:context=".MainActivity"
     android:background="#F2EBE9"
     android:padding="15dp">
     <LinearLayout
@@ -71,7 +71,10 @@
                         android:id="@+id/inputdeparture"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Try 'Semarang'" />
+                        android:hint="Try 'Semarang'"
+                        tools:ignore="TouchTargetSizeCheck"
+
+                        />
 
                 </LinearLayout>
 
@@ -100,7 +103,8 @@
                         android:id="@+id/inputarrival"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Try 'Jepara'" />
+                        android:hint="Try 'Jepara'"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                 </LinearLayout>
 
@@ -135,8 +139,10 @@
 
                             <EditText
                                 android:layout_width="match_parent"
+                                android:id="@+id/seatss"
                                 android:layout_height="wrap_content"
-                                android:hint="2 ppl" />
+                                android:hint="2 ppl"
+                                tools:ignore="TouchTargetSizeCheck" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -163,9 +169,12 @@
                                 android:src="@drawable/ic_icondate" />
 
                             <EditText
+                                android:id="@+id/datepick"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="6 Des" />
+                                android:hint="6 Des"
+                                tools:ignore="TouchTargetSizeCheck"
+                                />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -183,9 +192,47 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@android:color/holo_purple"
+            android:onClick="scheduleList"
             android:text="Search Bus"
             android:textColor="@color/white"
-            />
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:src="@drawable/ic_ellipse_2findpurp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:onClick="ticketList"
+            android:src="@drawable/ic_rectangle_4rectgra" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:src="@drawable/ic_baseline_notifications_24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_61sdp"
+            android:src="@drawable/ic_baseline_perm_identity_24" />
     </LinearLayout>
 
 </RelativeLayout>

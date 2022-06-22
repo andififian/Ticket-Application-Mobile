@@ -15,7 +15,7 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
         <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/_230sdp"
+            android:layout_width="@dimen/_220sdp"
             android:layout_height="@dimen/_30sdp"
             app:cardCornerRadius="@dimen/_5sdp"
 
@@ -48,15 +48,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cancel"
-            android:paddingLeft="@dimen/_10sdp"
+            android:id="@+id/cancels"
+            android:paddingLeft="@dimen/_15sdp"
             />
     </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
+    <ListView
+        android:layout_below="@id/search"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/search">
+        android:layout_height="match_parent">
 
-
-    </androidx.recyclerview.widget.RecyclerView>
+    </ListView>
 
 </RelativeLayout>
