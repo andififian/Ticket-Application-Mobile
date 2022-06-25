@@ -52,11 +52,13 @@
             android:paddingLeft="@dimen/_15sdp"
             />
     </LinearLayout>
-    <ListView
-        android:layout_below="@id/search"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </ListView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search">
+        
+    </androidx.recyclerview.widget.RecyclerView>
+
 
 </RelativeLayout>
