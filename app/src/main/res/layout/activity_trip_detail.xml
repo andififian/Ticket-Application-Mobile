@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="#F2EBE9"
-    android:padding="15dp">
+    android:paddingTop="15dp"
+    android:paddingHorizontal="15dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -188,15 +189,16 @@
         android:layout_below="@id/lists">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/searchBus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@android:color/holo_purple"
-            android:onClick="scheduleList"
             android:text="Search Bus"
             android:textColor="@color/white"
             tools:ignore="TextContrastCheck" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/line2"
         android:layout_width="match_parent"
@@ -224,6 +226,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:onClick="soon"
             android:layout_marginLeft="@dimen/_60sdp"
             android:src="@drawable/ic_baseline_notifications_24" />
 
@@ -231,6 +234,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:onClick="soon"
             android:layout_marginLeft="@dimen/_61sdp"
             android:src="@drawable/ic_baseline_perm_identity_24" />
     </LinearLayout>

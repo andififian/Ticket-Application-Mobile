@@ -28,9 +28,14 @@ public class MainActivity extends AppCompatActivity {
         editTextDeparture = findViewById(R.id.inputdeparture);
         editTextArrival = findViewById(R.id.inputarrival);
         editTextDate = findViewById(R.id.datepick);
+        Button searchBus = findViewById(R.id.searchBus);
+        searchBus.setOnClickListener(v->{
+            startActivity(new Intent(this, ScheduleList.class));
+            finish();
+        });
         editTextseat.setOnClickListener(new View.OnClickListener(){
-        @Override
-        public void onClick(View view){addPopupSeekbar();}
+            @Override
+            public void onClick(View view){addPopupSeekbar();}
         });
 
         editTextDeparture.setOnClickListener(view ->{startActivity(new Intent(MainActivity.this, DestinationAdapter.class));} );
@@ -83,9 +88,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void scheduleList(View view){startActivity(new Intent(MainActivity.this, ScheduleList.class));}
 
-    public void ticketList(View view){startActivity(new Intent(MainActivity.this, TicketList.class));}
+    public void ticketList(View view){startActivity(new Intent(MainActivity.this, MainActivity1.class));
+        finish();}
+
+    public void soon(View view){startActivity(new Intent(MainActivity.this, Soon.class));
+        finish();}
 
 
 }

@@ -15,6 +15,7 @@
             android:layout_width="100dp"
             android:layout_height="@dimen/_20sdp"
             android:background="#00FFFFFF"
+            android:id="@+id/backDetailPicture"
             android:src="@drawable/ic_baseline_arrow_back_24"/>
         <TextView
             android:layout_width="match_parent"
@@ -834,6 +835,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Book Now"
+            android:id="@+id/bookNowSeat"
             android:background="@color/purple_200"
             android:textColor="@color/white"/>
     </LinearLayout>

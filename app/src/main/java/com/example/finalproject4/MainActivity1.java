@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,4 +34,9 @@ public class MainActivity1 extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         teamsView.setLayoutManager(layoutManager);
     }
+    public void scheduleList(View view){startActivity(new Intent(MainActivity1.this, MainActivity.class));
+        finish();}
+
+    public void soon(View view){startActivity(new Intent(MainActivity1.this, Soon.class));
+        finish();}
 }

@@ -94,7 +94,9 @@
         <item name="android:textColor">#D8D8D8</item>
     </style>
 
-
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/popupdrawable</item>
+    </style>
 
 
 </resources>

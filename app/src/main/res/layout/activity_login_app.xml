@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginApp">
+
+    <ImageView
+        android:layout_width="240.32dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/illustration"
+        />
+    <TextView
+        android:id="@+id/welcome_"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="136dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="379dp"
+        android:text="Welcome!"
+        android:textSize="22sp"
+        android:textColor="#585858"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:gravity="center_horizontal|top"
+        />
+
+    <TextView
+        android:id="@+id/Top2"
+        android:layout_width="224dp"
+        android:layout_height="84dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="76dp"
+        android:text="Bux is a online booking service for Bus transportation. login now to user Bux services."
+        android:fontFamily="@font/lato"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="429dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="11sp"
+        android:translationY="5.6sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="552dp"
+        android:background="@drawable/rectangle9"
+        android:drawableLeft="@drawable/logogoogle"
+        android:fontFamily="@font/lato"
+        android:paddingLeft="20dp"
+        android:text="Sign up with google"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

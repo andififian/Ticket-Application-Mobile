@@ -37,7 +37,22 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SeatPicker"
+            android:name=".Soon"
+            android:exported="false" />
+        <activity
+            android:name=".SaveNumber"
+            android:exported="false" />
+        <activity
+            android:name=".FinishRegist"
+            android:exported="false" />
+        <activity
+            android:name=".ticket_item"
+            android:exported="false" />
+        <activity
+            android:name=".TicketDetail"
+            android:exported="false" />
+        <activity
+            android:name=".LoginApp"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -24,13 +24,14 @@
         android:src="@drawable/img_7" />
 
     <Button
+        android:id="@+id/takeMe"
         android:layout_width="311dp"
         android:layout_height="65dp"
-        android:text="Save number"
-        android:textColor="@color/white"
-        android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="65dp"
-        android:layout_marginTop="50dp"/>
+        android:text="Save number"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

@@ -44,12 +44,14 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             />
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/btnSaveNumber"
         android:layout_width="311dp"
         android:layout_height="65dp"
         android:text="Save number"

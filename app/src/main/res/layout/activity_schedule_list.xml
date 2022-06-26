@@ -16,6 +16,7 @@
         android:paddingTop="@dimen/_15sdp">
 
         <ImageButton
+            android:id="@+id/backSchedule"
             android:layout_width="100dp"
             android:layout_height="@dimen/_28sdp"
             android:background="#00FFFFFF"
@@ -392,13 +393,13 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/Bookbutt"
+                android:id="@+id/btnDetail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_70sdp"
                 android:layout_marginTop="@dimen/_13sdp"
                 android:background="@color/purple_500"
-                android:text="Book Now"
+                android:text="Details"
                 android:textColor="@color/white" />
 
         </LinearLayout>

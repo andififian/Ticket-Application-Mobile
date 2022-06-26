@@ -14,7 +14,8 @@ public class DestinationAdapter extends AppCompatActivity {
         setContentView(R.layout.activity_destination_list);
 
         textViewCancel = findViewById(R.id.cancels);
-        textViewCancel.setOnClickListener(view ->{startActivity(new Intent(DestinationAdapter.this, MainActivity.class));} );
+        textViewCancel.setOnClickListener(view ->{startActivity(new Intent(DestinationAdapter.this, MainActivity.class));
+            finish();} );
 
     }
 
